@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.test-container {
+  width: 600px;
+  height: 600px;
+  outline: 1px solid green;
+  overflow: auto;
+}
+
+.test-container .test {
+  color: red;
+  outline: 1px solid red;
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.test-container .test + .test {
+  margin-top: 30px;
+}
+
+@-webkit-keyframes test {
+  0%, 30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  90%, 100% {
+    opacity: 0;
+  }
+}
+
+@keyframes test {
+  0%, 30% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.3;
+  }
+  90%, 100% {
+    opacity: 0;
+  }
+}
+
+.animation {
+  -webkit-animation: test 1s ease-in;
+          animation: test 1s ease-in;
+}
+/*# sourceMappingURL=index2.css.map */
